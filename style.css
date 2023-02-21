@@ -1,0 +1,12 @@
+.camera {
+    width: 350px;
+    height: 300px;
+    border-width: 5px;
+    border-color: rgb(0, 166, 171);
+    border-radius: 20px;
+    border-style: solid;
+}
+
+body {
+    font-family:'Trebuchet MS';
+}

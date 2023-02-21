@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>Hand Gestures</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    
+        <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+    
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <center>
+        <div class="heading">
+            <h2>Hand Gestures</h2>
+            <h5><b>How to Use the App: </b>Do one of the following hand gestures:<span>✌ 👌 👍</span> in front of the screen. Click the first button to take a picture. After you take a snapshot, click the second button to upload the emotion predictions on the screen. </h5>
+        </div>
+        <div class="col-md-4 col-sm-12 col-xs-12">
+            <label>Webcam</label>
+            <div id="webcam" class="camera"></div>
+            <br>
+            <button class="btn btn-info" onclick="take_snapshot();">Take Snapshot</button>   
+        </div>
+        <div class="col-md-4 col-sm-12 col-xs-12">
+            <label>Snapshot</label>
+            <div id="snapshot" class="camera"></div>
+            <br>
+            <button class="btn btn-success" onclick="take_prediction();">Predict Gesture</button>
+            <div class="col-md-4 col-sm-12 col-xs-12">
+        <h4>Prediction 1 - 
+            <label id="result1"></label>
+        </h4>
+        <h4>Prediction 2 - 
+            <label id="result2"></label>
+        </h4>
+        </div>
+    </center>
+    </body>
+</html>
